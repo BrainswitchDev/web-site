@@ -1,0 +1,28 @@
+/* Add here all your CSS customizations */
+
+.navbar-brand {padding: 4px 15px !important;}
+
+section.portafolio-top {
+	background-color: #171717;
+	border-bottom: 5px solid #CCC;
+	border-top: 5px solid #CCC;
+	margin-bottom: 35px;
+	min-height: 50px;
+	padding: 0;
+	padding: 20px 0;
+	position: relative;
+	text-align: left;
+}
+
+section.portafolio-top h2{color: #ffffff !important;}
+
+.navbar-nav {
+	float: right !important;
+	margin: 0;
+}
+
+.navbar-inverse .navbar-nav>li>a {color: #ec681b !important; }
+
+.icon-brain{
+	background-image: url("img/brain.png");
+}

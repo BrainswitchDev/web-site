@@ -1,0 +1,10 @@
+Ejecutar 
+
+1. npm install
+2. Servidor: grunt
+
+
+git status
+git add --all
+git commit -m "traduje una nueva página"
+git push origin master
