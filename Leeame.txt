@@ -1,4 +1,4 @@
-Ejecutar 
+﻿Ejecutar 
 
 1. npm install
 2. Servidor: grunt
@@ -6,5 +6,5 @@ Ejecutar
 
 git status
 git add --all
-git commit -m "traduje una nueva página"
+git commit -m "Profile Page for a Brain"
 git push origin master
