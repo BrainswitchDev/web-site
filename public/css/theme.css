@@ -954,7 +954,7 @@ section.featured {
 }
 
 section.featured.footer {
-	margin: 30px 0 -70px;
+	margin: 0 0 -50px;
 }
 
 section.featured.map {
@@ -1314,6 +1314,7 @@ div.home-concept {
 	background: transparent url(../img/home-concept.png) no-repeat center 0;
 	width: 100%;
 	overflow: hidden;
+	margin-bottom: 50px;
 }
 
 div.home-concept div.row {

@@ -14,7 +14,7 @@ section.portafolio-top {
 	text-align: left;
 }
 
-section.portafolio-top h2{color: #ffffff !important;}
+section.portafolio-top h2{color: #ffffff !important; margin-top: 15px;}
 
 .navbar-nav {
 	float: right !important;

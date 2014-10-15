@@ -6,5 +6,5 @@
 
 git status
 git add --all
-git commit -m "Profile Page for a Brain"
+git commit -m "Team and member Brain page"
 git push origin master
