@@ -6,5 +6,5 @@
 
 git status
 git add --all
-git commit -m "Team and member Brain page"
+git commit -m "The slideshow change"
 git push origin master
