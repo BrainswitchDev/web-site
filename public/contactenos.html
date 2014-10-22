@@ -102,7 +102,7 @@
 						<div class="col-md-6">
 
 							<div class="alert alert-success hidden" id="contactSuccess">
-								<strong>Éxito!</strong> Tu mensaje ha sido enviado.
+								<strong>¡Gracias!</strong> Tu mensaje ha sido enviado.
 							</div>
 
 							<div class="alert alert-danger hidden" id="contactError">
@@ -110,7 +110,7 @@
 							</div>
 
 							<h2 class="short">¿Tienes algo que preguntarnos?<strong>escríbenos</strong></h2>
-							<form action="php/contact-form.php" id="contactForm" type="post">
+							<form id="contactForm" type="post">
 								<div class="row">
 									<div class="form-group">
 										<div class="col-md-6">
@@ -259,6 +259,7 @@
 
 		<!-- Libs -->
 		<script src="vendor/jquery.js"></script>
+		<script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
 		<script src="js/plugins.js"></script>
 		<script src="vendor/jquery.easing.js"></script>
 		<script src="vendor/jquery.appear.js"></script>
@@ -275,12 +276,59 @@
 
 		<!-- Page Scripts -->
 		<script src="js/views/view.contact.js"></script>
-
 		<!-- Theme Initializer -->
 		<script src="js/theme.js"></script>
-
 		<!-- Custom JS -->
 		<script src="js/custom.js"></script>
+		
+		<!-- Save contact -->
+		<script type="text/javascript">
+			$( document ).ready(function() {
+				App.init();
+				$('#contactForm').on('submit', addContact);
+
+                function addContact(eEvento) {        
+                    //evitamos que el form se envie (para que no recargue la pagina)
+                    eEvento.preventDefault();
+
+                    var item = { 
+                    	Id: ID(),
+                        name: $("#name").val(), 
+                        subject: $("#subject").val(),  
+                        message: $("#message").val(),
+                        email: $("#email").val()
+                    };
+                    
+                    // Guardamos el nuevo contacto
+                    App.save(item);
+                    $( "#name" ).val( "" );
+                    $( "#subject" ).val( "" );
+                    $( "#message" ).val( "" );
+                    $( "#email" ).val( "" );
+                    $("#contactSuccess").removeClass('hidden');
+                }; 
+
+                var ID = function () {
+				  return '_' + Math.random().toString(36).substr(2, 9);
+				};
+                    
+            });                 
+		</script>
+
+		<!-- Google Analytics Seguimiento del sitio web -->
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-48518080-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
 
 	</body>
 </html>
