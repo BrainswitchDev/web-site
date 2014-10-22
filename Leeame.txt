@@ -6,5 +6,7 @@
 
 git status
 git add --all
-git commit -m "The slideshow change"
+git commit -m "the delete nodes html for mvp web site"
 git push origin master
+
+git push origin mvp
