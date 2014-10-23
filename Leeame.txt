@@ -6,7 +6,10 @@
 
 git status
 git add --all
-git commit -m "the delete nodes html for mvp web site"
+git commit -m "the add script Google Analytics and submit contact form"
 git push origin master
 
+
+---branch mvp
+git pull origin mvp 
 git push origin mvp
