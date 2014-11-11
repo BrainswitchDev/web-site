@@ -42,43 +42,42 @@
 		<script src="../vendor/respond.js"></script>
 		<![endif]-->
 	</head>
-	<body>
-		<div class="body">
-			<header class="single-menu flat-menu">
+	<body class="body">
+		<header class="single-menu flat-menu">
+			<div class="container">
+				<h1 class="logo">
+					<a href="index.html">
+					<img alt="Porto" src="../img/logo.png">
+					</a>
+				</h1>
+				<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+				<i class="icon icon-bars"></i>
+				</button>
+			</div>
+			<div class="navbar-collapse nav-main-collapse collapse">
 				<div class="container">
-					<h1 class="logo">
-						<a href="../index.html">
-						<img alt="Porto" src="../img/logo.png">
-						</a>
-					</h1>
-					<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
-					<i class="icon icon-bars"></i>
-					</button>
-				</div>
-				<div class="navbar-collapse nav-main-collapse collapse">
-					<div class="container">
-						<div class="social-icons">
-							<ul class="social-icons">
-								<li class="facebook"><a href="http://www.facebook.com/BrainswitchCO" target="_blank" title="Facebook">Facebook</a></li>
-								<li class="twitter"><a href="http://www.twitter.com/BrainswitchCO" target="_blank" title="Twitter">Twitter</a></li>
-								<li class="linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin">Linkedin</a></li>
-							</ul>
-						</div>
-						<nav class="nav-main mega-menu">
-							<ul class="nav nav-pills nav-main" id="mainMenu">
-								<ul class="nav nav-pills nav-main" id="mainMenu">
-								<li><a href="../index.html">Inicio</a></li>
-								<li><a href="../servicios.html">Servicios</a></li>
-								<li class="active"><a href="index.html">Equipo</a></li>
-								<li><a href="../eventos.html">Eventos</a></li>
-								<li><a href="../contactenos.html">Contáctenos</a></li>
-							</ul>
-							</ul>
-						</nav>
+					<div class="social-icons">
+						<ul class="social-icons">
+							<li class="facebook"><a href="https://www.facebook.com/BrainswitchCO" target="_blank" title="Facebook">Facebook</a></li>
+							<li class="twitter"><a href="http://www.twitter.com/BrainswitchCO" target="_blank" title="Twitter">Twitter</a></li>
+							<li class="linkedin"><a href="http://www.linkedin.com/company/brainswitch" target="_blank" title="Linkedin">Linkedin</a></li>
+							<li class="googleplus"><a href="https://plus.google.com/116306204656463962650" rel="publisher" target="_blank" title="Google Plus">Google Plus</a></li>
+						</ul>
 					</div>
+					<nav class="nav-main mega-menu">
+						<ul class="nav nav-pills nav-main" id="mainMenu">
+							<li><a href="../index.html">Inicio</a></li>
+							<li><a href="../servicios.html">Servicios</a></li>
+							<li class="active"><a href="equipo/index.html">Equipo</a></li>
+							<li><a href="../eventos.html">Eventos</a></li>
+							<li><a href="../contactenos.html">Contáctenos</a></li>
+						</ul>
+					</nav>
 				</div>
-			</header>
-			<div role="main" class="main">
+			</div>
+		</header>
+		<!-- main -->
+		<div role="main" class="main">
 				<section class="page-top">
 					<div class="container">
 						<div class="row">
@@ -336,82 +335,81 @@
 					</div>
 				</div>
 			</div>
-			<footer id="footer">
-			<div class="container">
-				<div class="row">
-					<div class="footer-ribon">
-						<span>Contacto</span>
-					</div>
-					<div class="col-md-3">
-						<div class="newsletter">
-							<h4>Boletín de noticias </h4>
-							<p>Mantente al tanto de nuestros eventos, cursos y noticias que estamos generando. Introduce tu dirección de correo y suscríbete a nuestro boletín.</p>
-							<div class="alert alert-success hidden" id="newsletterSuccess">
-								<strong>¡Switch Up!</strong> Has sido añadido a nuestro boletín.
-							</div>
-							<div class="alert alert-danger hidden" id="newsletterError"></div>
-							<form id="newsletterForm" >
-								<div class="input-group">
-									<input class="form-control" placeholder="Email Address" name="email" id="email" type="text">
-									<span class="input-group-btn">
-									<button class="btn btn-default" type="submit">Go!</button>
-									</span>
-								</div>
-							</form>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<h4>Últimos Tweet</h4>
-						<div id="tweet" class="twitter" data-account-id="">
-							<p>Por favor, espera un momento...</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="contact-details">
-							<h4>Contáctenos</h4>
-							<ul class="contact">
-								<li><i class="icon icon-phone"></i> <strong>Celular:</strong> (057) 3144685645</li>
-								<li><i class="icon icon-envelope"></i> <strong>E-mail:</strong> <a href="mailto:info@brainswitch.co">info@brainswitch.co</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<h4>Síganos</h4>
-						<div class="social-icons">
-							<ul class="social-icons">
-								<li class="facebook"><a href="http://www.facebook.com/" target="_blank" data-placement="bottom" rel="tooltip" title="Facebook">Facebook</a></li>
-								<li class="twitter"><a href="http://www.twitter.com/" target="_blank" data-placement="bottom" rel="tooltip" title="Twitter">Twitter</a></li>
-								<li class="linkedin"><a href="http://www.linkedin.com/" target="_blank" data-placement="bottom" rel="tooltip" title="Linkedin">Linkedin</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="footer-copyright">
+		<!-- /main -->
+		<footer id="footer">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-2">
-							<a href="index.html" class="logo">
-							<img alt="Brainswitch" class="img-responsive" src="../img/logo-footer.png">
-							</a>
+						<div class="footer-ribon">
+							<span>Contacto</span>
 						</div>
-						<div class="col-md-6">
-							<p>© Copyright 2014. All Rights Reserved.</p>
+						<div class="col-md-3">
+							<div class="newsletter">
+								<h4>Boletín de noticias </h4>
+								<p>Mantente al tanto de nuestros eventos, cursos y noticias que estamos generando. Introduce tu dirección de correo y suscríbete a nuestro boletín.</p>
+								<div class="alert alert-success hidden" id="newsletterSuccess">
+									<strong>¡Switch Up!</strong> Has sido añadido a nuestro boletín.
+								</div>
+								<div class="alert alert-danger hidden" id="newsletterError"></div>
+								<form id="newsletterForm" >
+									<div class="input-group">
+										<input class="form-control" placeholder="Email Address" name="email" id="email" type="text">
+										<span class="input-group-btn">
+										<button class="btn btn-default" type="submit">Go!</button>
+										</span>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<h4>Últimos Tweet</h4>
+							<div id="tweet" class="twitter" data-account-id="">
+								<p>Por favor, espera un momento...</p>
+							</div>
 						</div>
 						<div class="col-md-4">
-							<nav id="sub-menu">
-								<ul>
-									<li><a href="../faq.html">FAQ's</a></li>
-									<li><a href="sitemap.html">Sitemap</a></li>
-									<li><a href="contact-us.html">Contact</a></li>
+							<div class="contact-details">
+								<h4>Contáctenos</h4>
+								<ul class="contact">
+									<li><i class="icon icon-phone"></i> <strong>Celular:</strong> (057) 3144685645</li>
+									<li><i class="icon icon-envelope"></i> <strong>E-mail:</strong> <a href="mailto:info@brainswitch.co">info@brainswitch.co</a></li>
 								</ul>
-							</nav>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<h4>Síganos</h4>
+							<div class="social-icons">
+								<ul class="social-icons">
+									<li class="facebook"><a href="http://www.facebook.com/" target="_blank" data-placement="bottom" rel="tooltip" title="Facebook">Facebook</a></li>
+									<li class="twitter"><a href="http://www.twitter.com/" target="_blank" data-placement="bottom" rel="tooltip" title="Twitter">Twitter</a></li>
+									<li class="linkedin"><a href="http://www.linkedin.com/" target="_blank" data-placement="bottom" rel="tooltip" title="Linkedin">Linkedin</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+				<div class="footer-copyright">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-2">
+								<a href="index.html" class="logo">
+								<img alt="Brainswitch" class="img-responsive" src="../img/logo-footer.png">
+								</a>
+							</div>
+							<div class="col-md-6">
+								<p>© Copyright 2014. All Rights Reserved.</p>
+							</div>
+							<div class="col-md-4">
+								<nav id="sub-menu">
+									<ul>
+										<li><a href="sitemap.html">Sitemap</a></li>
+										<li><a href="contactenos.html">Contáctenos</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
 		</footer>
-		</div>
 		<!-- Libs -->
 		<script src="../vendor/jquery.js"></script>
 		<script src="../js/plugins.js"></script>
@@ -420,14 +418,29 @@
 		<script src="../vendor/jquery.cookie.js"></script>
 		<script src="../vendor/bootstrap.js"></script>
 		<script src="../vendor/twitterjs/twitter.js"></script>
+		<script src="../vendor/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+		<script src="../vendor/rs-plugin/js/jquery.themepunch.revolution.js"></script>
 		<script src="../vendor/owl-carousel/owl.carousel.js"></script>
-		<script src="../vendor/jflickrfeed/jflickrfeed.js"></script>
+		<script src="../vendor/circle-flip-slideshow/js/jquery.flipshow.js"></script>
 		<script src="../vendor/magnific-popup/magnific-popup.js"></script>
-		<script src="../vendor/jquery.stellar.js"></script>
 		<script src="../vendor/jquery.validate.js"></script>
+		<!-- Current Page Scripts -->
+		<script src="../js/views/view.home.js"></script>
 		<!-- Theme Initializer -->
 		<script src="../js/theme.js"></script>
-		<!-- Custom JS -->
-		<script src="../js/custom.js"></script>
+		<!-- Google Analytics Seguimiento del sitio web -->
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-48518080-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
 	</body>
 </html>
