@@ -6,5 +6,10 @@
 
 git status
 git add --all
-git commit -m "The slideshow change"
+git commit -m "change links at the home"
 git push origin master
+
+
+---branch mvp
+git pull origin mvp 
+git push origin mvp
